@@ -2,8 +2,10 @@ let displayValue = "";
 
 function appendNumber(number) {
     displayValue += number; 
-    updateDisplay();   
+    updateDisplay();       
 }
+
+
 
 function appendOperator(operator) {
     displayValue += operator;
