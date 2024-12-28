@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="./brave_screenshot.png" type="image/x-icon">
+</head>
+<body>
+    <div class="flex justify-center items-center mt-20">
+      <div class="border-2 p-4 rounded-md bg-gray-800">
+        <input type="text" placeholder="0" class="w-34 border-2 mb-2 bg-gray-200" id="display">
+        <div class="mt-1 mb-1">
+            <button class="border-2 px-2 rounded-full py-1 mb-1 active:bg-orange-500 active:text-white text-green-300" onclick="clearDisplay('Ac')">Ac</button>
+            <button class="border-2 px-1 rounded-full py-1 ml-2 active:bg-orange-500 active:text-white  text-green-300" onclick="clearDisplay('Del')">Del</button>
+            <button class="border-2 px-[9px] rounded-full py-1 ml-2 active:bg-orange-500 active:text-white text-green-300" onclick="appendOperator('%')">%</button>
+            <button class="border-2 px-3 rounded-full py-1 ml-2 active:bg-orange-500 active:text-white text-green-300" onclick="appendOperator('/')">/</button>
+        </div>
+        <div class="mt-1 mb-1">
+            <button class="px-3 py-1 border-2 rounded-full mb-1 active:bg-orange-500 active:text-white  text-white" onclick="appendNumber('7')">7</button>
+            <button class="px-3 py-1 border-2 rounded-full ml-2 active:bg-orange-500 active:text-white text-white" onclick="appendNumber('8')">8</button>
+            <button class="px-3 py-1  border-2 rounded-full ml-2 active:bg-orange-500 active:text-white  text-white" onclick="appendNumber('9')">9</button>
+            <button class="px-[13px] py-1 border-2 rounded-full ml-2 active:bg-orange-500 active:text-white  text-green-300" onclick="appendOperator('*')">*</button>
+        </div>
+        <div class="mt-1 mb-1 ">
+            <button class="px-3 py-1 border-2 rounded-full mb-1 active:bg-orange-500 active:text-white  text-white" onclick="appendNumber('4')">4</button>
+            <button class="px-3 py-1 border-2 rounded-full ml-2 active:bg-orange-500 active:text-white text-white" onclick="appendNumber('5')">5</button>
+            <button class="px-3 py-1 border-2 rounded-full ml-2 active:bg-orange-500 active:text-white  text-white" onclick="appendNumber('6')">6</button>
+            <button class="px-[13px] py-1 border-2 rounded-full ml-2 active:bg-orange-500 active:text-white text-green-300" onclick="appendOperator('-')"> - </button>
+        </div>
+        <div class="mt-1 mb-1">
+        <button class="px-3 py-1 border-2 rounded-full mb-1 active:bg-orange-500 active:text-white text-white" onclick="appendNumber('1')">1</button>
+        <button class="px-3 py-1 border-2 rounded-full ml-2 active:bg-orange-500 active:text-white text-white" onclick="appendNumber('2')">2</button>
+        <button class="px-3 py-1 border-2 rounded-full ml-2 active:bg-orange-500 active:text-white text-white" onclick="appendNumber('3')">3</button>
+        <button class="px-[11px] py-1 border-2 rounded-full ml-2 active:bg-orange-500 active:text-white text-green-300" onclick="appendOperator('+')">+</button>
+    </div>
+    <div>
+        <button class="px-2 py-1 border-2 rounded-full active:bg-orange-500 active:text-white text-white" onclick="appendNumber('00')">00</button>
+        <button class="px-3 py-1 border-2 rounded-full ml-2 active:bg-orange-500 active:text-white text-white" onclick="appendNumber('0')">0</button>
+        <button class="px-[15px] py-1 border-2 rounded-full ml-2 active:bg-orange-500 active:text-white text-green-300" onclick="appendOperator('.')">.</button>
+        <button class="px-[11px] py-1 border-2 rounded-full ml-2 active:bg-orange-500 active:text-white text-green-300" onclick="calculate('=')">=</button>
+    </div>
+      </div>
+</div>
+<script src="script.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
